@@ -73,30 +73,30 @@ Examples of the pattern to follow:
 ```
 [root folder]/
 ├── CLAUDE.md
-├── IMAGE.JPG _ IMAGE.md              ← single photo posts: one .md per image, named after it
-├── IMAGE.JPG _ IMAGE.md
+├── IMAGE.JPG + IMAGE.txt              ← single photo posts: one .txt per image, named after it
+├── IMAGE.JPG + IMAGE.txt
 │
-├── Group 1/                          ← multi-photo post: all images _ one combined .md
+├── Group 1/                          ← multi-photo post: all images + one combined .txt
 │   ├── IMAGE_A.JPG
 │   ├── IMAGE_B.JPG
-│   └── IMAGE_A_IMAGE_B.md           ← named after all images in the group, joined with _
+│   └── IMAGE_A_IMAGE_B.txt           ← named after all images in the group, joined with _
 │
 └── Group 2/                          ← another multi-photo post
     ├── IMAGE_A.JPG
     ├── IMAGE_B.JPG
-    └── IMAGE_A_IMAGE_B.md
+    └── IMAGE_A_IMAGE_B.txt
 ```
 
 **Rules:**
-- Photos in the **root folder** = individual Instagram posts, one `.md` per image named after the image file
-- Photos in a **Group X folder** = a single Instagram post (carousel/collection), one `.md` named after all image files in the folder joined with `_` (e.g. `DSCF3955_DSCF3959.md`)
+- Photos in the **root folder** = individual Instagram posts, one `.txt` per image named after the image file
+- Photos in a **Group X folder** = a single Instagram post (carousel/collection), one `.txt` named after all image files in the folder joined with `_` (e.g. `DSCF3955_DSCF3959.txt`)
 - Caption files always live alongside their images
 
 ---
 
-## Markdown Caption Format
+## Caption File Format
 
-```markdown
+```
 # FILENAME.JPG
 
 [2–3 line abstract caption]
@@ -106,4 +106,4 @@ Examples of the pattern to follow:
 #tag1 #tag2 ... (up to 30, all on one line)
 ```
 
-For group posts, the heading lists all image filenames and the file is named to match: `# FILE1.JPG _ FILE2.JPG` → saved as `FILE1_FILE2.md`
+For group posts, the heading lists all image filenames and the file is named to match: `# FILE1.JPG + FILE2.JPG` → saved as `FILE1_FILE2.txt`
