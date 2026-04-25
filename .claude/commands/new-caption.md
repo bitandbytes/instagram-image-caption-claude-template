@@ -9,6 +9,8 @@ View the image file(s) the user specifies (or all uncaptioned images in the curr
    - Add B&W tags (#bnwphotography etc.) for monochrome images
    - Use location tags from the Location Hashtag Map in CLAUDE.md (ask the user if location is unknown)
    - Include #fujifilm #fujifilmphotography
-5. Create the markdown file following the format in CLAUDE.md — named after the image file for solo shots, or caption.md inside the group folder for group posts.
+5. Create the markdown file following the format in CLAUDE.md:
+   - Solo shot: name the file after the image (e.g. `DSCF3503.md`)
+   - Group post: name the file after all images in the group joined with `_`, no spaces (e.g. `DSCF3955_DSCF3959.md`). Place it inside the group folder alongside the images.
 
 Ask the user for the location if it cannot be determined from context.

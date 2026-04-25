@@ -73,23 +73,23 @@ Examples of the pattern to follow:
 ```
 [root folder]/
 ├── CLAUDE.md
-├── IMAGE.JPG + IMAGE.md        ← single photo posts: one .md per image, named after it
-├── IMAGE.JPG + IMAGE.md
+├── IMAGE.JPG _ IMAGE.md              ← single photo posts: one .md per image, named after it
+├── IMAGE.JPG _ IMAGE.md
 │
-├── Group 1/                    ← multi-photo post: all images + one caption.md
+├── Group 1/                          ← multi-photo post: all images _ one combined .md
 │   ├── IMAGE_A.JPG
 │   ├── IMAGE_B.JPG
-│   └── caption.md
+│   └── IMAGE_A_IMAGE_B.md           ← named after all images in the group, joined with _
 │
-└── Group 2/                    ← another multi-photo post
+└── Group 2/                          ← another multi-photo post
     ├── IMAGE_A.JPG
     ├── IMAGE_B.JPG
-    └── caption.md
+    └── IMAGE_A_IMAGE_B.md
 ```
 
 **Rules:**
 - Photos in the **root folder** = individual Instagram posts, one `.md` per image named after the image file
-- Photos in a **Group X folder** = a single Instagram post (carousel/collection), one `caption.md` for all images in that folder
+- Photos in a **Group X folder** = a single Instagram post (carousel/collection), one `.md` named after all image files in the folder joined with `_` (e.g. `DSCF3955_DSCF3959.md`)
 - Caption files always live alongside their images
 
 ---
@@ -106,4 +106,4 @@ Examples of the pattern to follow:
 #tag1 #tag2 ... (up to 30, all on one line)
 ```
 
-For group posts, the heading lists all image filenames: `# FILE1.JPG + FILE2.JPG`
+For group posts, the heading lists all image filenames and the file is named to match: `# FILE1.JPG _ FILE2.JPG` → saved as `FILE1_FILE2.md`
