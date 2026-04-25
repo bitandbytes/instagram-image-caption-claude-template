@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:jaredthomastapyphotography.medium.com)",
+      "WebFetch(domain:streetphotographyinternational.com)",
+      "WebFetch(domain:www.instagram.com)"
+    ]
+  }
+}
